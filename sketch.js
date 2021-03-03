@@ -32,19 +32,19 @@ function draw() {
   
   background("brown");
   
-  paper.display();
+ 
   ground.display();
   d1.display();
   d2.display();
   d3.display();
-
+  paper.display();
   drawSprites();
  
 }
 
 
 function keyPressed(){
-  if(keyCode===UP_ARROW){
-    Matter.Body.applyForce(paper.body,paper.body.position,{x:160,y:-190});
+  if(keyCode===32){
+    Matter.Body.applyForce(paper.body,(paper.body.position),{x:1000,y:-1200});
   }
 }

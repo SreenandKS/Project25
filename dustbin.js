@@ -9,11 +9,11 @@ class Dustbin {
     }
     display(){
       var pos =this.body.position;
-      
+      push();
       rectMode(CENTER);
       fill(255,144,85);
       rect(pos.x, pos.y, this.height,this.width);
-      push();
+      translate(pos.x,pos.y);
       imageMode(CENTER);
       //strokeWeight(0.5);
       image(this.img,800,598,140,137);
